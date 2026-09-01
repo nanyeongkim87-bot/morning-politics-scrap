@@ -46,6 +46,7 @@ jobs:
         env:
           PYTHON: python
           REQUIRE_TODAY: '1'
+          EXTERNAL_STATIC: '1'
         run: pnpm run build
 
       - name: Verify today's deployment artifact

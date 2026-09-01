@@ -540,7 +540,9 @@ fs.writeFileSync(scrapsPath, `${JSON.stringify(archive, null, 2)}\n`, 'utf8');
 
 const viteBin = path.join(root, 'node_modules', 'vite', 'bin', 'vite.js');
 execFileSync(process.execPath, [viteBin, 'build'], { cwd: root, stdio: 'inherit' });
-execFileSync(process.execPath, [path.join(root, 'scripts', 'prepare-sites-output.js')], {
-  cwd: root,
-  stdio: 'inherit',
-});
+if (process.env.EXTERNAL_STATIC !== '1' && fs.existsSync(path.join(root, '.openai', 'hosting.json'))) {
+  execFileSync(process.execPath, [path.join(root, 'scripts', 'prepare-sites-output.js')], {
+    cwd: root,
+    stdio: 'inherit',
+  });
+}
