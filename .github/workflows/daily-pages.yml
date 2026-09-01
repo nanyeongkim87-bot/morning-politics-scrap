@@ -1,0 +1,72 @@
+name: Daily morning politics site
+
+on:
+  schedule:
+    # 06:10 Asia/Seoul, Monday-Saturday (GitHub cron uses UTC).
+    - cron: '10 21 * * 0-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: morning-politics-production
+  cancel-in-progress: false
+
+jobs:
+  collect-build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Collect today's articles and build
+        env:
+          PYTHON: python
+          REQUIRE_TODAY: '1'
+        run: pnpm run build
+
+      - name: Verify today's deployment artifact
+        run: pnpm run verify:static
+
+      - name: Save the new daily archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/scraps.json
+          git diff --cached --quiet || git commit -m "Update morning politics data"
+          git push
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy publicly
+        id: deployment
+        uses: actions/deploy-pages@v4

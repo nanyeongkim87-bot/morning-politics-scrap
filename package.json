@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "node scripts/build-site.js",
+    "verify:static": "node scripts/verify-static-build.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {}
+}

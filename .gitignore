@@ -1,0 +1,10 @@
+node_modules/
+dist/
+outputs/*
+!outputs/naver_morning_politics_scrap.py
+work/
+site-source/
+.openai/
+.site-package-stage-*/
+*.tgz
+*.tar
