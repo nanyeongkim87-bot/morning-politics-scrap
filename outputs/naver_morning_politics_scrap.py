@@ -55,6 +55,25 @@ def load_external_rules() -> dict:
 EXTERNAL_RULES = load_external_rules()
 
 
+def load_external_feedback() -> dict[str, str]:
+    feedback_dir = Path(__file__).resolve().parents[1] / "feedback"
+    feedback: dict[str, str] = {}
+    if not feedback_dir.exists():
+        return feedback
+    for feedback_path in sorted(feedback_dir.glob("????????.json")):
+        with open(feedback_path, "r", encoding="utf-8") as file:
+            payload = json.load(file)
+        for item in payload.get("items", []):
+            title = item.get("title", "")
+            expected = item.get("expected", "")
+            if title and expected in {"include", "exclude"}:
+                feedback[title] = expected
+    return feedback
+
+
+EXTERNAL_FEEDBACK = load_external_feedback()
+
+
 def external_matched_phrases(title: str, phrases: Iterable[str]) -> list[str]:
     return [phrase for phrase in phrases if phrase and phrase in title]
 
@@ -73,6 +92,8 @@ def external_score_title(title: str) -> tuple[int, list[dict]]:
 
 
 def external_politics_decision(title: str) -> bool | None:
+    if title in EXTERNAL_FEEDBACK:
+        return EXTERNAL_FEEDBACK[title] == "include"
     if external_matched_phrases(title, EXTERNAL_RULES.get("forceExcludePhrases", [])):
         return False
     if external_matched_phrases(title, EXTERNAL_RULES.get("forceIncludePhrases", [])):
@@ -166,7 +187,6 @@ POLITICS_KEYWORDS = [
     "개헌",
     "시행령",
     "추경",
-    "임명",
     "복당",
     "공천",
     "공방",
@@ -201,6 +221,7 @@ CONTEXTUAL_POLITICS_KEYWORDS = [
     "규제",
     "예산",
     "인사",
+    "임명",
     "사퇴",
     "징계",
     "협상",
