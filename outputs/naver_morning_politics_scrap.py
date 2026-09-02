@@ -43,6 +43,12 @@ USER_AGENT = (
     "Chrome/126.0.0.0 Safari/537.36"
 )
 
+FETCH_ATTEMPTS = 3
+FETCH_RETRY_SECONDS = 2
+MIN_SOURCE_ARTICLES = 50
+MIN_SOURCE_PRESSES = 7
+MIN_POLITICAL_ARTICLES = 5
+
 
 def load_external_rules() -> dict:
     rules_path = Path(__file__).resolve().parents[1] / "rules" / "current.json"
@@ -827,9 +833,18 @@ def fetch(url: str, timeout: int = 20) -> str:
             "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.5,en;q=0.3",
         },
     )
-    with urlopen(request, timeout=timeout) as response:
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.read().decode(charset, errors="replace")
+    last_error: Exception | None = None
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                charset = response.headers.get_content_charset() or "utf-8"
+                return response.read().decode(charset, errors="replace")
+        except (HTTPError, URLError, TimeoutError) as exc:
+            last_error = exc
+            if attempt < FETCH_ATTEMPTS:
+                time.sleep(FETCH_RETRY_SECONDS * attempt)
+    assert last_error is not None
+    raise last_error
 
 
 def extract_newspaper_articles(press_id: str, yyyymmdd: str) -> list[Article]:
@@ -1030,11 +1045,29 @@ def render_web_json(date: dt.date, grouped: dict[str, list[Article]]) -> str:
 
 
 def collect(yyyymmdd: str, include_all: bool = False, pause: float = 0.25) -> dict[str, list[Article]]:
-    grouped: dict[str, list[Article]] = {}
+    raw_grouped: dict[str, list[Article]] = {}
     for full_name, _short_name, press_id in PRESS_ORDER:
         articles = extract_newspaper_articles(press_id, yyyymmdd)
-        grouped[full_name] = articles if include_all else [a for a in articles if is_political(a.title)]
+        raw_grouped[full_name] = articles
         time.sleep(pause)
+
+    source_total = sum(len(articles) for articles in raw_grouped.values())
+    source_presses = sum(bool(articles) for articles in raw_grouped.values())
+    if source_total < MIN_SOURCE_ARTICLES or source_presses < MIN_SOURCE_PRESSES:
+        raise RuntimeError(
+            f"지면 응답이 불완전합니다: {source_total}개 기사, {source_presses}개 신문사"
+        )
+
+    if include_all:
+        return raw_grouped
+
+    grouped = {
+        press: [article for article in articles if is_political(article.title)]
+        for press, articles in raw_grouped.items()
+    }
+    political_total = sum(len(articles) for articles in grouped.values())
+    if political_total < MIN_POLITICAL_ARTICLES:
+        raise RuntimeError(f"정치기사 필터 결과가 비정상적으로 적습니다: {political_total}개")
     return grouped
 
 
@@ -1055,7 +1088,7 @@ def main(argv: Iterable[str] = sys.argv[1:]) -> int:
 
     try:
         grouped = collect(yyyymmdd, include_all=args.all)
-    except (HTTPError, URLError, TimeoutError) as exc:
+    except (HTTPError, URLError, TimeoutError, RuntimeError) as exc:
         print(f"수집 실패: {exc}", file=sys.stderr)
         return 1
 

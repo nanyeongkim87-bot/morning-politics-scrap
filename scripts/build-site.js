@@ -466,6 +466,9 @@ if (process.env.SKIP_SCRAPE !== '1') {
     });
   } catch (error) {
     console.warn('Could not refresh today scrape before building site.');
+    if (process.env.REQUIRE_TODAY === '1') {
+      process.exit(error.status || 1);
+    }
   }
 }
 
@@ -508,6 +511,18 @@ applyFeedbackIncludes(archive);
 if (process.env.REQUIRE_TODAY === '1' && !archive[yyyymmdd]) {
   console.error(`Today's data (${yyyymmdd}) was not collected; refusing to publish stale content.`);
   process.exit(1);
+}
+
+if (process.env.REQUIRE_TODAY === '1') {
+  const todaySections = Object.values(archive[yyyymmdd].sections || {});
+  const todayArticleCount = todaySections.reduce((sum, articles) => sum + articles.length, 0);
+  const populatedPressCount = todaySections.filter((articles) => articles.length > 0).length;
+  if (todayArticleCount < 5 || populatedPressCount < 3) {
+    console.error(
+      `Today's data (${yyyymmdd}) is incomplete: ${todayArticleCount} articles across ${populatedPressCount} presses.`,
+    );
+    process.exit(1);
+  }
 }
 
 const todayQa = validateManualQa(archive[yyyymmdd], politicsRules);

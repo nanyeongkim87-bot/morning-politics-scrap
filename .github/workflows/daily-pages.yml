@@ -1,18 +1,20 @@
-name: Publish morning politics site
+name: Collect and publish morning politics site
 
 on:
   schedule:
-    # 05:40 Asia/Seoul, Monday-Saturday (GitHub cron uses UTC).
-    - cron: '40 20 * * 0-5'
+    # Five independent chances between 05:15 and 06:35 Asia/Seoul, Monday-Saturday.
+    # GitHub can delay or drop individual scheduled events, so later runs are catch-ups.
+    - cron: '15,35,55 20 * * 0-5'
+    - cron: '15,35 21 * * 0-5'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
-  group: morning-politics-production
+  group: morning-politics-unattended-production
   cancel-in-progress: false
 
 jobs:
@@ -37,15 +39,44 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build today's saved articles
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Collect and build today's articles
         env:
+          PYTHON: python
           REQUIRE_TODAY: '1'
           EXTERNAL_STATIC: '1'
-          SKIP_SCRAPE: '1'
-        run: pnpm run build
+        run: |
+          TODAY="$(node -e "const f=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}); process.stdout.write(f.format(new Date()).replaceAll('-',''))")"
+          if node -e "const a=require('./src/scraps.json'); process.exit(a[process.argv[1]] ? 0 : 1)" "$TODAY"; then
+            export SKIP_SCRAPE=1
+            echo "Today's archive already exists; reusing it for deployment recovery."
+          fi
+
+          for attempt in 1 2 3; do
+            if pnpm run build; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+            echo "Attempt $attempt failed; retrying in 120 seconds."
+            sleep 120
+          done
 
       - name: Verify today's deployment artifact
         run: pnpm run verify:static
+
+      - name: Save the new daily archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/scraps.json
+          git diff --cached --quiet || git commit -m "Update morning politics data"
+          git push
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
