@@ -1,13 +1,13 @@
-name: Daily morning politics site
+name: Publish morning politics site
 
 on:
   schedule:
-    # 06:10 Asia/Seoul, Monday-Saturday (GitHub cron uses UTC).
-    - cron: '10 21 * * 0-5'
+    # 05:40 Asia/Seoul, Monday-Saturday (GitHub cron uses UTC).
+    - cron: '40 20 * * 0-5'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect-build-deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -34,31 +34,18 @@ jobs:
           node-version: 22
           cache: pnpm
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Collect today's articles and build
+      - name: Build today's saved articles
         env:
-          PYTHON: python
           REQUIRE_TODAY: '1'
           EXTERNAL_STATIC: '1'
+          SKIP_SCRAPE: '1'
         run: pnpm run build
 
       - name: Verify today's deployment artifact
         run: pnpm run verify:static
-
-      - name: Save the new daily archive
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/scraps.json
-          git diff --cached --quiet || git commit -m "Update morning politics data"
-          git push
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

@@ -453,18 +453,20 @@ const todayJsonOutput = path.join(outputsDir, `morning_politics_${yyyymmdd}.json
 const todayOneDriveOutput = path.join(oneDriveDir, `morning_politics_${yyyymmdd}.txt`);
 const todayOneDriveJsonOutput = path.join(oneDriveDir, `morning_politics_${yyyymmdd}.json`);
 
-try {
-  execFileSync(python, [
-    path.join(outputsDir, 'naver_morning_politics_scrap.py'),
-    '--output',
-    todayOutput,
-    '--json-output',
-    todayJsonOutput,
-  ], {
-    stdio: 'inherit',
-  });
-} catch (error) {
-  console.warn('Could not refresh today scrape before building site.');
+if (process.env.SKIP_SCRAPE !== '1') {
+  try {
+    execFileSync(python, [
+      path.join(outputsDir, 'naver_morning_politics_scrap.py'),
+      '--output',
+      todayOutput,
+      '--json-output',
+      todayJsonOutput,
+    ], {
+      stdio: 'inherit',
+    });
+  } catch (error) {
+    console.warn('Could not refresh today scrape before building site.');
+  }
 }
 
 const archive = fs.existsSync(scrapsPath)
