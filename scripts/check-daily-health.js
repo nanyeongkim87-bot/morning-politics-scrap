@@ -68,7 +68,7 @@ function weekdayForDate(date) {
   }).format(new Date(Date.UTC(year, month - 1, day, 3)));
 }
 
-function afterCutoff(expectedDate, now = new Date(), cutoffMinutes = 9 * 60) {
+function afterCutoff(expectedDate, now = new Date(), cutoffMinutes = 6 * 60 + 40) {
   const currentDate = seoulDate(now);
   if (expectedDate < currentDate) return true;
   if (expectedDate > currentDate) return false;
@@ -96,7 +96,7 @@ function evaluateHealth({ expectedDate, now = new Date(), runs = [], archiveHasD
   }
 
   const issues = [];
-  if (scheduler === 'missing') issues.push('GitHub schedule event was not created by the 09:00 KST cutoff.');
+  if (scheduler === 'missing') issues.push('GitHub schedule event was not created by the 06:40 KST deadline.');
   if (failedRuns.length) issues.push(`${failedRuns.length} workflow run(s) failed today.`);
   if (!archiveHasDate) issues.push('The main-branch archive is missing today.');
   if (!liveHasDate) issues.push('The deployed page is missing today.');

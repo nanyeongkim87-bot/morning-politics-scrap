@@ -51,3 +51,15 @@ test('does not call an upcoming schedule missing before cutoff', () => {
   });
   assert.equal(result.scheduler, 'pending');
 });
+
+test('marks the scheduler missing at the 06:40 KST deadline', () => {
+  const result = evaluateHealth({
+    expectedDate,
+    now: new Date('2026-09-03T21:40:00Z'),
+    runs: [],
+    archiveHasDate: true,
+    liveHasDate: true,
+  });
+  assert.equal(result.scheduler, 'missing');
+  assert.equal(result.status, 'recovered_without_schedule');
+});
