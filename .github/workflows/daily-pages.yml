@@ -1,11 +1,25 @@
 name: Collect and publish morning politics site
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/scraps.json'
+      - 'src/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'vite.config.js'
+      - 'index.html'
+      - '.github/workflows/daily-pages.yml'
   schedule:
-    # Five independent chances between 05:15 and 06:35 Asia/Seoul, Monday-Saturday.
+    # Independent chances between 05:15 and 08:07 Asia/Seoul, Monday-Saturday.
     # GitHub can delay or drop individual scheduled events, so later runs are catch-ups.
     - cron: '15,35,55 20 * * 0-5'
     - cron: '15,35 21 * * 0-5'
+    - cron: '7 22 * * 0-5'
+    - cron: '7 23 * * 0-5'
   workflow_dispatch:
 
 permissions:
