@@ -105,3 +105,8 @@ jobs:
       - name: Deploy publicly
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify live page and record scheduler health
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/check-daily-health.js --require-live --wait-seconds 90

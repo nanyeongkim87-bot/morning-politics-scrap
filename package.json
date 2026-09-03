@@ -1,7 +1,9 @@
 {
   "scripts": {
     "build": "node scripts/build-site.js",
-    "verify:static": "node scripts/verify-static-build.js"
+    "verify:static": "node scripts/verify-static-build.js",
+    "check:daily": "node scripts/check-daily-health.js",
+    "test:health": "node --test scripts/check-daily-health.test.js"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
