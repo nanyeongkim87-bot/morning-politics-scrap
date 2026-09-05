@@ -1044,7 +1044,12 @@ def render_web_json(date: dt.date, grouped: dict[str, list[Article]]) -> str:
     ) + "\n"
 
 
-def collect(yyyymmdd: str, include_all: bool = False, pause: float = 0.25) -> dict[str, list[Article]]:
+def collect(
+    yyyymmdd: str,
+    include_all: bool = False,
+    pause: float = 0.25,
+    allow_partial_sources: bool = False,
+) -> dict[str, list[Article]]:
     raw_grouped: dict[str, list[Article]] = {}
     for full_name, _short_name, press_id in PRESS_ORDER:
         articles = extract_newspaper_articles(press_id, yyyymmdd)
@@ -1053,7 +1058,8 @@ def collect(yyyymmdd: str, include_all: bool = False, pause: float = 0.25) -> di
 
     source_total = sum(len(articles) for articles in raw_grouped.values())
     source_presses = sum(bool(articles) for articles in raw_grouped.values())
-    if source_total < MIN_SOURCE_ARTICLES or source_presses < MIN_SOURCE_PRESSES:
+    minimum_presses = 1 if allow_partial_sources else MIN_SOURCE_PRESSES
+    if source_total < MIN_SOURCE_ARTICLES or source_presses < minimum_presses:
         raise RuntimeError(
             f"지면 응답이 불완전합니다: {source_total}개 기사, {source_presses}개 신문사"
         )
@@ -1077,6 +1083,11 @@ def parse_args(argv: Iterable[str]) -> argparse.Namespace:
     parser.add_argument("--all", action="store_true", help="정치 필터 없이 지면 기사 전체 출력")
     parser.add_argument("--output", help="결과 저장 경로. 생략하면 화면에 출력")
     parser.add_argument("--json-output", help="웹페이지용 JSON 저장 경로. 모든 표시 기사 URL을 포함")
+    parser.add_argument(
+        "--allow-partial-sources",
+        action="store_true",
+        help="토요일에 현재 제공된 신문사만으로 임시 또는 추가 마감",
+    )
     return parser.parse_args(list(argv))
 
 
@@ -1087,7 +1098,13 @@ def main(argv: Iterable[str] = sys.argv[1:]) -> int:
     yyyymmdd = f"{target_date:%Y%m%d}"
 
     try:
-        grouped = collect(yyyymmdd, include_all=args.all)
+        if args.allow_partial_sources and target_date.weekday() != 5:
+            raise RuntimeError("부분 신문사 마감은 토요일에만 허용됩니다")
+        grouped = collect(
+            yyyymmdd,
+            include_all=args.all,
+            allow_partial_sources=args.allow_partial_sources,
+        )
     except (HTTPError, URLError, TimeoutError, RuntimeError) as exc:
         print(f"수집 실패: {exc}", file=sys.stderr)
         return 1

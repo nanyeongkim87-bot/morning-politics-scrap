@@ -455,13 +455,22 @@ const todayOneDriveJsonOutput = path.join(oneDriveDir, `morning_politics_${yyyym
 
 if (process.env.SKIP_SCRAPE !== '1') {
   try {
-    execFileSync(python, [
+    const scrapeArgs = [
       path.join(outputsDir, 'naver_morning_politics_scrap.py'),
       '--output',
       todayOutput,
       '--json-output',
       todayJsonOutput,
-    ], {
+    ];
+    const seoulWeekday = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Seoul',
+      weekday: 'short',
+    }).format(new Date());
+    if (process.env.ALLOW_PARTIAL_SATURDAY === '1' && seoulWeekday === 'Sat') {
+      scrapeArgs.push('--allow-partial-sources');
+      console.log('Saturday partial-source close is enabled.');
+    }
+    execFileSync(python, scrapeArgs, {
       stdio: 'inherit',
     });
   } catch (error) {
