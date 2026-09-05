@@ -97,12 +97,12 @@ function evaluateHealth({ expectedDate, now = new Date(), runs = [], archiveHasD
 
   const issues = [];
   if (scheduler === 'missing') issues.push('GitHub schedule event was not created by the 06:40 KST deadline.');
-  if (failedRuns.length) issues.push(`${failedRuns.length} workflow run(s) failed today.`);
+  if (failedRuns.length) issues.push(`${failedRuns.length} earlier workflow run(s) failed today.`);
   if (!archiveHasDate) issues.push('The main-branch archive is missing today.');
   if (!liveHasDate) issues.push('The deployed page is missing today.');
 
   let status = 'healthy';
-  if (!archiveHasDate || !liveHasDate || failedRuns.length) status = 'critical';
+  if (!archiveHasDate || !liveHasDate) status = 'critical';
   else if (scheduler === 'missing') status = 'recovered_without_schedule';
   else if (scheduler === 'pending') status = 'pending';
 
@@ -211,7 +211,7 @@ async function main() {
   console.log(output);
   if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `\n\`\`\`text\n${output}\n\`\`\`\n`);
 
-  if (!result.archiveHasDate || (options.requireLive && !result.liveHasDate) || result.counts.failedRuns) {
+  if (!result.archiveHasDate || (options.requireLive && !result.liveHasDate)) {
     process.exitCode = 1;
   } else if (options.strictScheduler && result.scheduler === 'missing') {
     process.exitCode = 2;

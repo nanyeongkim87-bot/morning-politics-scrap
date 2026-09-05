@@ -63,3 +63,18 @@ test('marks the scheduler missing at the 06:40 KST deadline', () => {
   assert.equal(result.scheduler, 'missing');
   assert.equal(result.status, 'recovered_without_schedule');
 });
+
+test('does not fail a current publication because an earlier attempt failed', () => {
+  const result = evaluateHealth({
+    expectedDate,
+    now: afterCutoff,
+    runs: [
+      { event: 'push', status: 'in_progress', conclusion: null, created_at: '2026-09-03T21:55:00Z' },
+      { event: 'schedule', status: 'completed', conclusion: 'failure', created_at: '2026-09-03T20:30:00Z' },
+    ],
+    archiveHasDate: true,
+    liveHasDate: true,
+  });
+  assert.equal(result.status, 'healthy');
+  assert.equal(result.counts.failedRuns, 1);
+});
