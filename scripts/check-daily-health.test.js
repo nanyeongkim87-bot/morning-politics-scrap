@@ -1,9 +1,10 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { evaluateHealth } = require('./check-daily-health');
+const { evaluateHealth, validateHealthManifest } = require('./check-daily-health');
 
 const expectedDate = '20260904';
 const afterCutoff = new Date('2026-09-04T00:00:00Z');
+const emptySections = Object.fromEntries(['조선', '중앙', '동아', '경향', '한겨레', '국민', '서울', '세계', '한국'].map((press) => [press, 0]));
 
 test('reports a healthy scheduled publication', () => {
   const result = evaluateHealth({
@@ -77,4 +78,27 @@ test('does not fail a current publication because an earlier attempt failed', ()
   });
   assert.equal(result.status, 'healthy');
   assert.equal(result.counts.failedRuns, 1);
+});
+
+test('accepts a valid Saturday partial health manifest with one populated press', () => {
+  assert.equal(validateHealthManifest({
+    date: expectedDate,
+    mode: 'saturday-partial',
+    articleCount: 5,
+    populatedPressCount: 1,
+    sectionCount: 9,
+    sections: { ...emptySections, 조선: 5 },
+  }, expectedDate), true);
+});
+
+test('rejects a date-only or structurally incomplete health manifest', () => {
+  assert.equal(validateHealthManifest({ date: expectedDate }, expectedDate), false);
+  assert.equal(validateHealthManifest({
+    date: expectedDate,
+    mode: 'full',
+    articleCount: 5,
+    populatedPressCount: 2,
+    sectionCount: 9,
+    sections: { ...emptySections, 조선: 3, 중앙: 2 },
+  }, expectedDate), false);
 });

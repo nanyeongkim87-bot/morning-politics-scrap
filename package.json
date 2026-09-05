@@ -3,7 +3,11 @@
     "build": "node scripts/build-site.js",
     "verify:static": "node scripts/verify-static-build.js",
     "check:daily": "node scripts/check-daily-health.js",
-    "test:health": "node --test scripts/check-daily-health.test.js"
+    "test:health": "node --test scripts/check-daily-health.test.js",
+    "close:collect": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-morning-close.ps1 -Mode collect",
+    "close:saturday": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-morning-close.ps1 -Mode saturday-close",
+    "close:verify": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-morning-close.ps1 -Mode verify",
+    "close:refresh": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-morning-close.ps1 -Mode saturday-refresh"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

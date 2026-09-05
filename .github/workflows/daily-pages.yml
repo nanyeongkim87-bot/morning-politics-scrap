@@ -4,23 +4,16 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'src/scraps.json'
-      - 'src/**'
-      - 'scripts/**'
-      - 'package.json'
-      - 'pnpm-lock.yaml'
-      - 'vite.config.js'
-      - 'index.html'
-      - '.github/workflows/daily-pages.yml'
   schedule:
-    # Five chances between 05:07 and 06:27 Asia/Seoul, Monday-Saturday.
-    # All attempts precede the user's 06:40 reading deadline.
+    # Five chances between 05:07 and 06:22 Asia/Seoul, Monday-Saturday.
+    # The last collection starts with at least 18 minutes of deployment margin.
     - cron: '7,27,47 20 * * 0-5'
-    - cron: '7,27 21 * * 0-5'
+    - cron: '7,22 21 * * 0-5'
     # Saturday 08:02 Asia/Seoul: refresh the partial close with any later papers.
     - cron: '2 23 * * 5'
   workflow_dispatch:
+  repository_dispatch:
+    types: [morning-close]
 
 permissions:
   contents: write
@@ -29,7 +22,8 @@ permissions:
 
 concurrency:
   group: morning-politics-unattended-production
-  cancel-in-progress: false
+  # A direct recovery push or dispatch takes priority over a delayed schedule.
+  cancel-in-progress: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' }}
 
 jobs:
   build-deploy:
@@ -58,6 +52,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Test collection safeguards
+        run: python -m unittest scripts.test_naver_morning_politics_scrap
+
       - name: Collect and build today's articles
         env:
           PYTHON: python
@@ -67,15 +64,19 @@ jobs:
           TODAY="$(node -e "const f=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}); process.stdout.write(f.format(new Date()).replaceAll('-',''))")"
           SEOUL_WEEKDAY="$(node -e "process.stdout.write(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',weekday:'short'}).format(new Date()))")"
           SEOUL_HHMM="$(node -e "const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).map(x=>[x.type,x.value])); process.stdout.write(p.hour+p.minute)")"
-          if [ "$SEOUL_WEEKDAY" = "Sat" ] && [ "$SEOUL_HHMM" -ge 0625 ]; then
+          if [ "$SEOUL_WEEKDAY" = "Sat" ] && [ "$SEOUL_HHMM" -ge 0620 ]; then
             export ALLOW_PARTIAL_SATURDAY=1
-            echo "Saturday partial-source close is allowed after 06:25 KST."
+            echo "Saturday partial-source close is allowed after 06:20 KST."
           fi
 
           FORCE_REFRESH=0
           if [ "${{ github.event.schedule }}" = "2 23 * * 5" ]; then
             FORCE_REFRESH=1
             echo "Running the Saturday 08:02 additional close."
+          fi
+          if [ "${{ github.event.client_payload.mode }}" = "saturday-refresh" ]; then
+            FORCE_REFRESH=1
+            echo "Running an externally dispatched Saturday additional close."
           fi
 
           if [ "$FORCE_REFRESH" -eq 0 ] && node -e "const a=require('./src/scraps.json'); process.exit(a[process.argv[1]] ? 0 : 1)" "$TODAY"; then
@@ -90,8 +91,8 @@ jobs:
             if [ "$attempt" -eq 3 ]; then
               exit 1
             fi
-            echo "Attempt $attempt failed; retrying in 120 seconds."
-            sleep 120
+            echo "Attempt $attempt failed; retrying in 30 seconds."
+            sleep 30
           done
 
       - name: Verify today's deployment artifact
@@ -122,4 +123,4 @@ jobs:
       - name: Verify live page and record scheduler health
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/check-daily-health.js --require-live --wait-seconds 90
+        run: node scripts/check-daily-health.js --require-live --wait-seconds 180

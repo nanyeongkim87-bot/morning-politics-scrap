@@ -28,6 +28,12 @@ function getSeoulYyyymmdd() {
   return formatter.format(new Date()).replaceAll('-', '');
 }
 
+function writeFileAtomic(targetPath, contents) {
+  const temporaryPath = `${targetPath}.${process.pid}.tmp`;
+  fs.writeFileSync(temporaryPath, contents, 'utf8');
+  fs.renameSync(temporaryPath, targetPath);
+}
+
 const WEB_EXCLUDE_TITLE_KEYWORDS = [
   '[조수빈의 말로 사람 읽기]',
   '레이건',
@@ -450,8 +456,11 @@ fs.mkdirSync(qaDir, { recursive: true });
 const yyyymmdd = getSeoulYyyymmdd();
 const todayOutput = path.join(outputsDir, `morning_politics_${yyyymmdd}.txt`);
 const todayJsonOutput = path.join(outputsDir, `morning_politics_${yyyymmdd}.json`);
-const todayOneDriveOutput = path.join(oneDriveDir, `morning_politics_${yyyymmdd}.txt`);
-const todayOneDriveJsonOutput = path.join(oneDriveDir, `morning_politics_${yyyymmdd}.json`);
+const seoulWeekday = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'Asia/Seoul',
+  weekday: 'short',
+}).format(new Date());
+const partialSaturday = process.env.ALLOW_PARTIAL_SATURDAY === '1' && seoulWeekday === 'Sat';
 
 if (process.env.SKIP_SCRAPE !== '1') {
   try {
@@ -462,11 +471,7 @@ if (process.env.SKIP_SCRAPE !== '1') {
       '--json-output',
       todayJsonOutput,
     ];
-    const seoulWeekday = new Intl.DateTimeFormat('en-US', {
-      timeZone: 'Asia/Seoul',
-      weekday: 'short',
-    }).format(new Date());
-    if (process.env.ALLOW_PARTIAL_SATURDAY === '1' && seoulWeekday === 'Sat') {
+    if (partialSaturday) {
       scrapeArgs.push('--allow-partial-sources');
       console.log('Saturday partial-source close is enabled.');
     }
@@ -484,22 +489,22 @@ if (process.env.SKIP_SCRAPE !== '1') {
 const archive = fs.existsSync(scrapsPath)
   ? JSON.parse(fs.readFileSync(scrapsPath, 'utf8'))
   : {};
-for (const dir of [outputsDir, oneDriveDir]) {
+// Import OneDrive first so a freshly collected workspace JSON always wins.
+for (const dir of [oneDriveDir, outputsDir]) {
   if (!dir || !fs.existsSync(dir)) continue;
   for (const file of fs.readdirSync(dir)) {
     const jsonMatch = file.match(/^morning_politics_(\d{8})(?:_updated)?\.json$/);
     if (jsonMatch) {
+      const importDate = jsonMatch[1];
+      // Historical archive entries are immutable. Only today's fresh source may
+      // replace today's entry, preventing rule changes from rewriting old days.
+      if (importDate !== yyyymmdd && archive[importDate]) continue;
+      if (importDate === yyyymmdd && dir === oneDriveDir && fs.existsSync(todayJsonOutput)) continue;
       const fullPath = path.join(dir, file);
-      archive[jsonMatch[1]] = readJsonScrap(fullPath);
+      archive[importDate] = readJsonScrap(fullPath);
       continue;
     }
   }
-}
-
-if (fs.existsSync(todayOneDriveJsonOutput)) {
-  archive[yyyymmdd] = readJsonScrap(todayOneDriveJsonOutput);
-} else if (fs.existsSync(todayOneDriveOutput)) {
-  archive[yyyymmdd] = parseScrap(fs.readFileSync(todayOneDriveOutput, 'utf8'), path.basename(todayOneDriveOutput));
 }
 
 for (const dir of [outputsDir, oneDriveDir]) {
@@ -526,7 +531,8 @@ if (process.env.REQUIRE_TODAY === '1') {
   const todaySections = Object.values(archive[yyyymmdd].sections || {});
   const todayArticleCount = todaySections.reduce((sum, articles) => sum + articles.length, 0);
   const populatedPressCount = todaySections.filter((articles) => articles.length > 0).length;
-  if (todayArticleCount < 5 || populatedPressCount < 3) {
+  const minimumPopulatedPresses = partialSaturday ? 1 : 3;
+  if (todayArticleCount < 5 || populatedPressCount < minimumPopulatedPresses) {
     console.error(
       `Today's data (${yyyymmdd}) is incomplete: ${todayArticleCount} articles across ${populatedPressCount} presses.`,
     );
@@ -562,10 +568,36 @@ if (todayQa.presentDeny.length || todayQa.missingAllow.length || feedbackRegress
   process.exit(1);
 }
 
-fs.writeFileSync(scrapsPath, `${JSON.stringify(archive, null, 2)}\n`, 'utf8');
-
 const viteBin = path.join(root, 'node_modules', 'vite', 'bin', 'vite.js');
-execFileSync(process.execPath, [viteBin, 'build'], { cwd: root, stdio: 'inherit' });
+const originalScraps = fs.existsSync(scrapsPath) ? fs.readFileSync(scrapsPath, 'utf8') : null;
+try {
+  writeFileAtomic(scrapsPath, `${JSON.stringify(archive, null, 2)}\n`);
+  execFileSync(process.execPath, [viteBin, 'build'], { cwd: root, stdio: 'inherit' });
+} catch (error) {
+  if (originalScraps === null) fs.rmSync(scrapsPath, { force: true });
+  else writeFileAtomic(scrapsPath, originalScraps);
+  throw error;
+}
+
+const publishedDay = archive[yyyymmdd];
+const sectionCounts = Object.fromEntries(
+  Object.entries(publishedDay.sections || {}).map(([press, articles]) => [press, articles.length]),
+);
+const articleCount = Object.values(sectionCounts).reduce((sum, count) => sum + count, 0);
+const populatedPressCount = Object.values(sectionCounts).filter((count) => count > 0).length;
+writeFileAtomic(
+  path.join(root, 'dist', 'health.json'),
+  `${JSON.stringify({
+    date: yyyymmdd,
+    mode: partialSaturday ? 'saturday-partial' : 'full',
+    builtAt: new Date().toISOString(),
+    commitSha: process.env.GITHUB_SHA || '',
+    articleCount,
+    populatedPressCount,
+    sectionCount: Object.keys(sectionCounts).length,
+    sections: sectionCounts,
+  }, null, 2)}\n`,
+);
 if (process.env.EXTERNAL_STATIC !== '1' && fs.existsSync(path.join(root, '.openai', 'hosting.json'))) {
   execFileSync(process.execPath, [path.join(root, 'scripts', 'prepare-sites-output.js')], {
     cwd: root,

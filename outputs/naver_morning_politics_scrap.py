@@ -9,6 +9,7 @@ morning politics clipping format. It uses only Python's standard library.
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import datetime as dt
 import html
 import json
@@ -48,6 +49,7 @@ FETCH_RETRY_SECONDS = 2
 MIN_SOURCE_ARTICLES = 50
 MIN_SOURCE_PRESSES = 7
 MIN_POLITICAL_ARTICLES = 5
+SOURCE_WORKERS = 3
 
 
 def load_external_rules() -> dict:
@@ -1050,16 +1052,36 @@ def collect(
     pause: float = 0.25,
     allow_partial_sources: bool = False,
 ) -> dict[str, list[Article]]:
-    raw_grouped: dict[str, list[Article]] = {}
-    for full_name, _short_name, press_id in PRESS_ORDER:
-        articles = extract_newspaper_articles(press_id, yyyymmdd)
-        raw_grouped[full_name] = articles
-        time.sleep(pause)
+    raw_grouped: dict[str, list[Article]] = {full_name: [] for full_name, _short_name, _press_id in PRESS_ORDER}
+    source_errors: dict[str, str] = {}
+
+    # Fetch a few papers in parallel so one slow publisher cannot consume the
+    # entire morning deadline. Results are still rendered in PRESS_ORDER.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=SOURCE_WORKERS) as executor:
+        futures: dict[concurrent.futures.Future[list[Article]], str] = {}
+        for full_name, _short_name, press_id in PRESS_ORDER:
+            futures[executor.submit(extract_newspaper_articles, press_id, yyyymmdd)] = full_name
+            if pause:
+                time.sleep(pause)
+
+        for future in concurrent.futures.as_completed(futures):
+            full_name = futures[future]
+            try:
+                raw_grouped[full_name] = future.result()
+            except Exception as exc:  # Keep per-source failures isolated for the Saturday close.
+                source_errors[full_name] = str(exc)
+
+    if source_errors and not allow_partial_sources:
+        details = ", ".join(f"{press}: {message}" for press, message in source_errors.items())
+        raise RuntimeError(f"신문사별 지면 수집 실패: {details}")
+    for press, message in source_errors.items():
+        print(f"부분 마감: {press} 지면을 비워 둡니다 ({message})", file=sys.stderr)
 
     source_total = sum(len(articles) for articles in raw_grouped.values())
     source_presses = sum(bool(articles) for articles in raw_grouped.values())
     minimum_presses = 1 if allow_partial_sources else MIN_SOURCE_PRESSES
-    if source_total < MIN_SOURCE_ARTICLES or source_presses < minimum_presses:
+    minimum_articles = 1 if allow_partial_sources else MIN_SOURCE_ARTICLES
+    if source_total < minimum_articles or source_presses < minimum_presses:
         raise RuntimeError(
             f"지면 응답이 불완전합니다: {source_total}개 기사, {source_presses}개 신문사"
         )

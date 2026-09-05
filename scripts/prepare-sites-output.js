@@ -10,6 +10,7 @@ const hostingTarget = path.join(openaiDistDir, 'hosting.json');
 const workerTarget = path.join(serverDir, 'index.js');
 const scrapsPath = path.join(root, 'src', 'scraps.json');
 const cssPath = path.join(root, 'src', 'styles.css');
+const healthPath = path.join(distDir, 'health.json');
 
 fs.mkdirSync(serverDir, { recursive: true });
 fs.mkdirSync(openaiDistDir, { recursive: true });
@@ -23,6 +24,7 @@ fs.writeFileSync(
 
 const scraps = fs.readFileSync(scrapsPath, 'utf8');
 const css = fs.readFileSync(cssPath, 'utf8');
+const health = fs.readFileSync(healthPath, 'utf8');
 
 const html = `<!doctype html>
 <html lang="ko">
@@ -188,9 +190,18 @@ const html = `<!doctype html>
 fs.writeFileSync(
   workerTarget,
   `const html = ${JSON.stringify(html)};
+const health = ${JSON.stringify(health)};
 
 export default {
-  async fetch() {
+  async fetch(request) {
+    if (new URL(request.url).pathname.endsWith('/health.json')) {
+      return new Response(health, {
+        headers: {
+          "content-type": "application/json; charset=UTF-8",
+          "cache-control": "no-store",
+        },
+      });
+    }
     return new Response(html, {
       headers: {
         "content-type": "text/html; charset=UTF-8",

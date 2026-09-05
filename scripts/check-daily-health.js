@@ -4,6 +4,7 @@ const SEOUL_TIME_ZONE = 'Asia/Seoul';
 const DEFAULT_REPOSITORY = 'nanyeongkim87-bot/morning-politics-scrap';
 const DEFAULT_WORKFLOW = 'daily-pages.yml';
 const DEFAULT_LIVE_URL = 'https://nanyeongkim87-bot.github.io/morning-politics-scrap/';
+const EXPECTED_PRESSES = ['조선', '중앙', '동아', '경향', '한겨레', '국민', '서울', '세계', '한국'];
 
 function parseArgs(argv) {
   const options = {
@@ -13,6 +14,7 @@ function parseArgs(argv) {
     liveUrl: process.env.LIVE_URL || DEFAULT_LIVE_URL,
     json: false,
     requireLive: false,
+    liveOnly: false,
     strictScheduler: false,
     waitSeconds: 0,
   };
@@ -20,6 +22,7 @@ function parseArgs(argv) {
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     if (arg === '--json') options.json = true;
+    else if (arg === '--live-only') options.liveOnly = true;
     else if (arg === '--require-live') options.requireLive = true;
     else if (arg === '--strict-scheduler') options.strictScheduler = true;
     else if (arg === '--date') options.date = argv[++index] || '';
@@ -144,16 +147,24 @@ async function fetchText(url, token = '') {
   return response.text();
 }
 
-async function checkLiveDate(liveUrl, expectedDate) {
-  const html = await fetchText(liveUrl);
-  if (html.includes(expectedDate)) return true;
-  const scriptSources = [...html.matchAll(/<script[^>]+src=["']([^"']+)["']/gi)].map((match) => match[1]);
-  for (const source of scriptSources) {
-    const scriptUrl = new URL(source, liveUrl).href;
-    const script = await fetchText(scriptUrl);
-    if (script.includes(expectedDate)) return true;
-  }
-  return false;
+function validateHealthManifest(manifest, expectedDate) {
+  if (!manifest || manifest.date !== expectedDate) return false;
+  if (!Number.isInteger(manifest.articleCount) || manifest.articleCount < 5) return false;
+  if (!Number.isInteger(manifest.sectionCount) || manifest.sectionCount !== EXPECTED_PRESSES.length) return false;
+  if (EXPECTED_PRESSES.some((press) => !Object.hasOwn(manifest.sections || {}, press))) return false;
+  const sectionCounts = EXPECTED_PRESSES.map((press) => manifest.sections[press]);
+  if (sectionCounts.some((count) => !Number.isInteger(count) || count < 0)) return false;
+  if (sectionCounts.reduce((sum, count) => sum + count, 0) !== manifest.articleCount) return false;
+  if (sectionCounts.filter((count) => count > 0).length !== manifest.populatedPressCount) return false;
+  const minimumPopulatedPresses = manifest.mode === 'saturday-partial' ? 1 : 3;
+  return Number.isInteger(manifest.populatedPressCount) && manifest.populatedPressCount >= minimumPopulatedPresses;
+}
+
+async function checkLiveHealth(liveUrl, expectedDate) {
+  const healthUrl = new URL('health.json', liveUrl.endsWith('/') ? liveUrl : `${liveUrl}/`);
+  healthUrl.searchParams.set('check', String(Date.now()));
+  const manifest = JSON.parse(await fetchText(healthUrl.href));
+  return validateHealthManifest(manifest, expectedDate) ? manifest : null;
 }
 
 async function checkLiveWithRetry(liveUrl, expectedDate, waitSeconds) {
@@ -161,7 +172,8 @@ async function checkLiveWithRetry(liveUrl, expectedDate, waitSeconds) {
   let lastError = null;
   do {
     try {
-      if (await checkLiveDate(liveUrl, expectedDate)) return true;
+      const manifest = await checkLiveHealth(liveUrl, expectedDate);
+      if (manifest) return manifest;
       lastError = null;
     } catch (error) {
       lastError = error;
@@ -170,7 +182,7 @@ async function checkLiveWithRetry(liveUrl, expectedDate, waitSeconds) {
     await new Promise((resolve) => setTimeout(resolve, Math.min(15000, deadline - Date.now())));
   } while (Date.now() <= deadline);
   if (lastError) throw lastError;
-  return false;
+  return null;
 }
 
 function formatReport(result) {
@@ -181,6 +193,11 @@ function formatReport(result) {
     `Archive: ${result.archiveHasDate ? 'current' : 'stale'}`,
     `Live page: ${result.liveHasDate ? 'current' : 'stale'}`,
   ];
+  if (result.liveHealth) {
+    lines.push(
+      `Live data: ${result.liveHealth.articleCount} articles / ${result.liveHealth.populatedPressCount} presses / ${result.liveHealth.mode}`,
+    );
+  }
   for (const issue of result.issues) lines.push(`- ${issue}`);
   return lines.join('\n');
 }
@@ -188,12 +205,25 @@ function formatReport(result) {
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   const expectedDate = options.date || seoulDate();
+  if (options.liveOnly) {
+    const liveHealth = await checkLiveWithRetry(options.liveUrl, expectedDate, options.waitSeconds);
+    const result = {
+      status: liveHealth ? 'healthy' : 'critical',
+      expectedDate,
+      liveHasDate: Boolean(liveHealth),
+      liveHealth,
+      verifiedAt: new Date().toISOString(),
+    };
+    console.log(options.json ? JSON.stringify(result, null, 2) : `Live page: ${liveHealth ? 'current' : 'stale'}`);
+    if (options.requireLive && !liveHealth) process.exitCode = 1;
+    return;
+  }
   const [owner, repository] = options.repository.split('/');
   if (!owner || !repository) throw new Error('--repository must use owner/name');
 
   const apiUrl = `https://api.github.com/repos/${owner}/${repository}/actions/workflows/${encodeURIComponent(options.workflow)}/runs?per_page=100`;
   const archiveUrl = `https://raw.githubusercontent.com/${owner}/${repository}/main/src/scraps.json`;
-  const [runsText, archiveText, liveHasDate] = await Promise.all([
+  const [runsText, archiveText, liveHealth] = await Promise.all([
     fetchText(apiUrl, process.env.GITHUB_TOKEN || ''),
     fetchText(archiveUrl),
     checkLiveWithRetry(options.liveUrl, expectedDate, options.waitSeconds),
@@ -204,8 +234,10 @@ async function main() {
     expectedDate,
     runs,
     archiveHasDate: Boolean(archive[expectedDate]),
-    liveHasDate,
+    liveHasDate: Boolean(liveHealth),
   });
+  result.liveHealth = liveHealth;
+  result.verifiedAt = new Date().toISOString();
 
   const output = options.json ? JSON.stringify(result, null, 2) : formatReport(result);
   console.log(output);
@@ -225,4 +257,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { afterCutoff, evaluateHealth, seoulDate, weekdayForDate };
+module.exports = { afterCutoff, evaluateHealth, seoulDate, validateHealthManifest, weekdayForDate };
