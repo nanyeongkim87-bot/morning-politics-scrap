@@ -20,8 +20,12 @@ function Invoke-Native {
 }
 
 function Test-LiveToday {
-  & npm.cmd run check:daily -- --live-only --require-live --json
-  return $LASTEXITCODE -eq 0
+  $output = & npm.cmd run check:daily -- --live-only --require-live --json 2>&1
+  $exitCode = $LASTEXITCODE
+  if ($output) {
+    $output | ForEach-Object { Write-Host $_ }
+  }
+  return ($exitCode -eq 0)
 }
 
 try {
@@ -107,6 +111,6 @@ try {
   Remove-Item Env:SKIP_SCRAPE -ErrorAction SilentlyContinue
   if ($lock) {
     $lock.Dispose()
-    Remove-Item -LiteralPath $lockPath -Force -ErrorAction SilentlyContinue
+    [System.IO.File]::Delete($lockPath)
   }
 }
