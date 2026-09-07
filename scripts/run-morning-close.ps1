@@ -31,6 +31,14 @@ function Test-LiveToday {
   return ($exitCode -eq 0)
 }
 
+function Assert-LiveToday {
+  param([int]$WaitSeconds)
+  & npm.cmd run check:daily -- --require-live --wait-seconds $WaitSeconds --json
+  if ($LASTEXITCODE -ne 0) {
+    throw "Live page verification failed after waiting $WaitSeconds seconds."
+  }
+}
+
 try {
   try {
     $lock = [System.IO.File]::Open($lockPath, 'CreateNew', 'Write', 'None')
@@ -59,7 +67,7 @@ try {
     Invoke-Native git pull --ff-only origin main
     Invoke-Native git commit --allow-empty -m "Trigger emergency Pages redeployment"
     Invoke-Native git push origin main
-    Invoke-Native npm.cmd run check:daily -- --require-live --wait-seconds 240 --json
+    Assert-LiveToday -WaitSeconds 240
     exit 0
   }
 
@@ -106,7 +114,7 @@ try {
     Invoke-Native git push origin main
   }
 
-  Invoke-Native npm.cmd run check:daily -- --require-live --wait-seconds 300 --json
+  Assert-LiveToday -WaitSeconds 300
 } finally {
   Remove-Item Env:REQUIRE_TODAY -ErrorAction SilentlyContinue
   Remove-Item Env:EXTERNAL_STATIC -ErrorAction SilentlyContinue
