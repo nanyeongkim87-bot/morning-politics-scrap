@@ -20,8 +20,11 @@ function Invoke-Native {
 }
 
 function Test-LiveToday {
+  $previousErrorActionPreference = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
   $output = & npm.cmd run check:daily -- --live-only --require-live --json 2>&1
   $exitCode = $LASTEXITCODE
+  $ErrorActionPreference = $previousErrorActionPreference
   if ($output) {
     $output | ForEach-Object { Write-Host $_ }
   }
