@@ -37929,5 +37929,397 @@
         }
       ]
     }
+  },
+  "20261009": {
+    "date": "20261009",
+    "sections": {
+      "조선": [
+        {
+          "title": "정부 규제에 ‘민간 대형 돔구장’도 못 짓는 한국",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004002919?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "‘미국서 국감’ 사흘 앞인데... 정청래만 비자 못 받았다",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004002847?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "가석방 요구한 이화영… 李정부 들어 454번 외부 접견",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004002912?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "또 한발 물러선 정부… 상속·고령층 농지 처분 않기로",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004002909?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "10명 중 7명 AI서 위로받아… 정부 ‘'사람처럼 의존 안돼\" 가이드라인 발표",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004002831?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 대통령에게 경기·성남 라인이 도대체 뭐길래",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004002867?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "중앙": [
+        {
+          "title": "정청래, 미국 비자 발급 보류",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556779?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사진] ‘현무-5’ 미사일 살펴보는 이 대통령",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556776?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "상속·고령층 임대농지는 ‘노터치’…정부, 성난 농심에 후퇴",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556774?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사진] 김민석 “농지조사 투기 시정”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556773?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "국힘 “104조 놔두고 국채 발행, 역마진 빚투” 박홍근 “재정관리 가능”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556771?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "“盧가 돈 달랬다” “사실 아냐”…한동훈이 꺼낸 17년 전 그날",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556800?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "김여정 “불량배들, 선의 광대극”…정부 의료장비 지원계획에 반발",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556770?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "노봉법 모범 되려다…오히려 발목잡힌 정부",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556741?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 대통령 지시 따른 농지 전수조사…국민 혼란만 키웠다",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003556765?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "동아": [
+        {
+          "title": "[단독]“러트닉, 대미투자 협상때 김정관에 ‘美의 국정원 불신’ 전달”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753859?date=20261009",
+          "showUrl": true
+        },
+        {
+          "title": "靑 “극초음속 탄도미사일 첫 시험발사 성공”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753860?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "정청래, 美비자 발급 지연… 유럽 공관 국감팀으로 변경",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753851?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "“한-이집트, CEPA 협상 개시-경제협력 확대”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753812?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "미래기금 사업 9조6220억 현금 지원성… 野 “세수 줄면 감당 못해”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753848?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "野 “김용범이 레버리지 ETF 압력” 이억원 “靑 지시 아니다”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753809?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[인사]감사원 外",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753806?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[오늘과 내일/한상준]맨홀 뚜껑의 ‘검찰’ 글자까지 지우는 정성으로",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753797?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]공공기관 수당, 장차관 관사… 누구를 위한 미래대응인지",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003753800?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "경향": [
+        {
+          "title": "농촌 찾은 김민석 “확실하게 현실 감안할 것”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475278?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “CPTPP 가입, 연내 신청 말라”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475277?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "극초음속 미사일 최초 시험발사 성공…이 대통령, 직접 참관",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475281?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "‘미, 국정원 불신’ 잇단 보도에…국정원 “국익 훼손말라”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475280?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "“한동훈에 검찰 자료 유출 경위 캐야…이화영 가석방 요건 안 돼”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475269?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "추미애 “김지용 부적격”, 김민석 “절제가 필요해”, 김지용 “공정한 수사”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475270?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이진숙 ‘5·18 유공자 명단 공개’ 법안 발의에…민주당 “역사 왜곡·2차 가해…기필코 저지”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475271?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “통일교재 미발간, 왜 발견 못했나” 경향신문 보도 공유…“대책 마련”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475261?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "“관객 판단을 정치가 대신 말라”…‘암살자(들)’ 정치권 논란·위협에 목소리 낸 영화인들",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475264?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]윤석열 정치자금 2심 무죄, 누가 납득하겠나",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475187?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]유엔사의 국회의원 지뢰 사고 현장 방문 거부, 주권침해다",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003475188?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "한겨레": [
+        {
+          "title": "이 대통령, 극초음속 미사일 성공에 “자주국방은 기술로 증명된다”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826704?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "정부, ‘경자유전’ 아니어도 불처분…명백한 농지 투기만 처벌한다",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826677?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이억원 “레버리지 손실 2.3조 추정”…국힘 ‘54조’ 주장 반박",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826622?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "법무차관 “이 대통령 공소 취소 지휘 않겠다”…후속 조처엔 여지 남겨",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826692?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "한-미 정보공유 갈등 장기화…국정원, 한·미·일 협의체 회의서 제외",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826683?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령, ‘극초음속 활공비행체’ 최초 시험발사 성공 참관",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826670?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "‘가갸날’로 시작 한글날 100돌인데…정부 보도자료 ‘M.AX’는 뭔 뜻?",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002826690?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "국민": [
+        {
+          "title": "CPTPP 연내 신청 李대통령 중단 지시",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877644?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "한발 더 물러선 정부… 상속·고령농 휴경지 처분 안한다",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877619?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "“농지 전수조사는 투기 시정 위한 것”… 사나워진 농심 달래기 나선 김민석",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877621?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "“靑 주범” “음모론” 레버리지ETF 공방",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877615?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "대통령은 쓰자했지만… 박홍근 장관 “명절 할인 지원, 미래기금 대상 아냐”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877618?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "‘이화영 가석방 요청’ 놓고 野 “이 대통령 협박” 공세",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877627?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "심상찮은 한·미 정보당국 불협화음… 곤혹스러운 국정원",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877723?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "정부 ‘정신건강 목적 생성형 AI 이용 가이드라인’ 나왔다",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877639?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이명박 “경제 강국인데 정치 못 따라가 안타까워”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877717?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "국민일보 김유나 기자 보건복지부 장관 표창",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877718?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 북한 김여정도 조롱하는 안보 부처 이견",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001877712?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "서울": [],
+      "세계": [
+        {
+          "title": "농가 찾은 김민석 “불이익 걱정 안해도 돼” [농지조사 후속조치]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165183?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "‘농지 강탈 공포’ 확산에 농심 이반… 정부, 처분 면제로 후퇴 [농지조사 후속조치]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165182?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이억원 “레버리지, 靑 지시 없었다” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165187?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "합참의장 “北정권 불법적 무모한 행위 강력 규탄” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165186?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이화영 454차례 외부접견 공개한 野 “李대통령, 폭로 두려울 것” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165189?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "휴게소 비싼 음식값 지적에 “직계약 확대” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165185?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "박홍근 “미래기금 쌈짓돈 주장은 정치공세” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165188?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "밴스 “韓 현 정부든, 차기 정부든… 알래스카 LNG 사업 완수”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165192?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "정부 29개 기금 지난해 운용수익률 3%도 못 미쳐",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165205?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 사상 첫 분기 영업이익 100조… 삼성 혁신 속도 더 높여야",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004165255?date=20261009",
+          "showUrl": false
+        }
+      ],
+      "한국": [
+        {
+          "title": "[단독] \"北 요새화는 '공세적 의도'\"... 이재명 정부 출범 후 줄곧 보고됐다",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958538?date=20261009",
+          "showUrl": true
+        },
+        {
+          "title": "상속·고령 임대 농지처분 제외 특별법 추진… 일각선 후퇴 지적도",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958474?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "李 \"안보는 스스로의 힘으로\"… 극초음속 활공비행체 발사 성공 참관",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958498?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "\"국회 감시 피하는 이재명 쌈짓돈\"… 162조 '미래대응기금' 충돌에 국감 난타전",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958482?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "레버리지 공방 국감… 野 \"청와대가 주범\", 이억원 \"적법 절차 거쳐\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958485?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "'이화영 가석방' 선 그은 법무부… 이 대통령 공소취소 논란 등 국감 '난타전'",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958501?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] \"이 대통령 날 석방해달라\" 이화영, '1일 1면회'… 민주 의원들과 조작기소 논의했나",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958388?date=20261009",
+          "showUrl": true
+        },
+        {
+          "title": "李, 한·이집트 CEPA 협상 개시 선언… \"평화가 가장 확실한 안보\"에도 한목소리",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958420?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "이곳선 대통령과 시민이 마주한다… '낮은' 채와 '작은' 마당들 품은 세종 집무실 [우리 동네, 신 스틸러]",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958534?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 대통령에 '대북송금 조작기소' 청구서 내민 이화영",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958526?date=20261009",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 질러놓고 반발하면 후퇴, 이런 아마추어 정부 어딨나",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000958527?date=20261009",
+          "showUrl": false
+        }
+      ]
+    }
   }
 }
