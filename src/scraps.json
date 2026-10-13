@@ -39339,5 +39339,473 @@
         }
       ]
     }
+  },
+  "20261014": {
+    "date": "20261014",
+    "sections": {
+      "조선": [
+        {
+          "title": "野 탄압하는 與, 의원 자격 정지도 검토",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003706?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 美 DNI가 ‘정보공유 제한’ 결정… 李, 정동영·이종석 경질론 선 그어",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003715?date=20261014",
+          "showUrl": true
+        },
+        {
+          "title": "대사관들 모두 서울 있는데… 법 고쳐 외교안보 부처까지 세종으로",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003700?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李정부 ‘1호 복지’ 방문진료… 혜택 받는 어르신은 20%뿐",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003689?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[정우상 칼럼] 친문은 극혐하고 대통령은 극찬하는 인사처장",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003637?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] ‘대법원 1억 와인’ 76% 구입한 金에 책임 묻거나 曺에 사과해야",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003638?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 다수 의석으로 동료 의원 ‘입틀막’ 하겠다는 입법 독재",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003639?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] ‘히트펌프’ 전국 350만대 보급한다는 정부… 원전 6기분 전력 필요한데… 대안 안보여",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004003716?date=20261014",
+          "showUrl": true
+        }
+      ],
+      "중앙": [
+        {
+          "title": "한·미 갈등에 李 “굴종 지양”…실용외교 다시 시험대",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557745?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "중수청장·공소청장 국무회의 참석에…대통령 “헌법상 당연” 야당 “길들이기”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557716?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "추미애 “김지용 부적합…청문회 증인으로 날 불러달라”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557715?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "“제발 나 돕지마” 당 거물과 손절…‘누가 덜 못하나’ 된 美선거",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557739?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "조정식 유니폼, 김민석 사인볼, 장동혁 정장…나눔 한마음 [위아자 2026]",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557741?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[신준봉의 시선] AI, 독서 쇠퇴, 민주주의",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557723?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[정운찬 칼럼] ‘대통령의 사람’보다 ‘경륜과 소신의 장관’이 필요하다",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557727?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[김승현의 뉴스터치] 추미애가 뒤바꾼 여야",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003557705?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "동아": [
+        {
+          "title": "“정부24까지 뚫려” 국감 질타에 개보위 “보안 뒤처진 것 사실”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754817?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李 “중수-공소-경찰청장 국무회의 참석 당연”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754804?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령도 “부캉이 보러 왔어요”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754821?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "與소속 지사 질타한 與 “경기도 예산 감액, 李정부 철학에 배치”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754800?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "與 “신천지 수만명 당원 가입 정황 확인” 정청래 “국물도 남김없이 밝히자”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754802?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "‘국힘 397억’ 걸린 尹 선거법 2심 27일 선고",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754787?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "청와대 뒤편 북악산, 59년만에 전구간 개방",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754807?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[오늘과 내일/장원재]靑이 해야 할 말, 하지 말아야 할 말",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754724?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]“대출 더 줄여야” “집값 급락 가능성”… LH 사장의 오지랖",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754726?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]더 막 나가는 鄭 장관과 남 얘기하듯 하는 康 대사",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003754727?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "경향": [
+        {
+          "title": "이 대통령 “굴종적·사대적 태도 지양”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476124?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "부산 간 이 대통령 “북극항로, 필요할 때 준비하면 늦어”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476121?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "국감장서도 김지용 때린 추미애 “친윤 검사…중수청장 부적합”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476110?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "공수처장 “중수청서 대통령 수사 땐 독립성 저하 우려”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476111?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "국회 윤리특위 답보에…김민석 “막말 등에 한시적 직무정지를”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476107?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "‘신천지 당원 가입’ 정황 확인 민주당, 내부갈등 기름 붓나",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476108?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "“투쟁 선봉” “선 넘는다” 이진숙·주진우에 국힘서도 이견",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476106?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "‘노란봉투법 해석지침’ 폐기 요구하는 민주노총[포토뉴스]",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476117?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "공적 자산을 정치 홍보에 쓴 두 ‘스트롱맨’ 제동",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476091?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[박상훈의 민주주의 시간] 법사위는 어떤 곳인가",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476056?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]훼손된 그린벨트에 주택공급, 불법 정당화 우려 크다",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003476043?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "한겨레": [
+        {
+          "title": "외교·통일·국방부 포함 정부기관 44곳, 2031년까지 세종 간다",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827205?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “굴종·사대 지양”…대미 ‘자주외교’ 강조",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827317?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "세종행 공무원들, 중앙부처 모두 이전에 “공감”…교육·주거는 “고민”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827269?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "한·미 정보 갈등에도 “국익 최우선”… 이 대통령이 ‘자주 외교’ 강조한 이유",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827318?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "지지율 비상인데 또 악재…민주, 신천지 집단가입 정황 확인",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827323?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "‘첫 국감’ 추미애, SNS·김지용 비판 공방…여·야 일제히 ‘포화’",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827324?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "머스크, 공화당에 ‘역대 최대’ 선거 지원금…미국 민주주의 경고등",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827238?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "‘2026 대한민국 직접민주주의 박람회’ 16일 국회서 개최",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827291?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] ‘국익 외교’ 확인한 이 대통령, 한-미 정보 갈등도 풀어야",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002827302?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "국민": [
+        {
+          "title": "강경화 “DMZ 폭발, 불의의 사고 아냐”… 與 “李 표현, 北 고의성 부정은 아니다”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878459?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "정부 믿고 삼전닉스 샀는데… ‘머니무브’ 씁쓸한 성적표",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878532?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "수사대상서 대통령·의원 제외?… 오동운 공수처장 “굉장히 우려”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878462?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "민주, 신천지 집단가입 정황 확인… 지도부, 수사 의뢰는 신중",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878465?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "친청 최민희 “대통령·당대표·민주당 한 묶음 어려운 상황”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878499?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "美 이민 당국, 중간선거 전 민주당 의원 압색",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878476?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령 “부산·경남을 남부 해양수도권으로 육성”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878464?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] ‘위법 영장 집행’에도… 검사 구속취소 권한 빠진 형소법 ‘구멍’",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878467?date=20261014",
+          "showUrl": true
+        },
+        {
+          "title": "공소청 초대 수장 인선 착수… 검찰총장 후보 추천위 구성",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878468?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 인천경찰청 찾아 “엄정 수사·재발 방지책 마련”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878512?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "청와대 뒷산 59년만에 모두 열린다",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878526?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 여야 모두 비판한 秋지사 도정, 이유 돌아보길",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878525?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 신천지의 민주당원 가입… 철저한 수사로 진상 밝혀야",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001878531?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "서울": [
+        {
+          "title": "외교·국방도… 정부부처 세종에 모인다",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688645?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李, 한미 균열론에 반박… “굴종·사대적 태도 지양”",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688644?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "민주당, 신천지 집단 입당 정황… “3만~5만명” 보고",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688624?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 모처럼 손잡은 여야… 한미의원연맹, 연말 방미 추진",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688651?date=20261014",
+          "showUrl": true
+        },
+        {
+          "title": "추미애 “2년간 채무증가 전국 3배” 민주당 “비상선언 당혹”",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688654?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "“국힘이 낸 권한쟁의 각하될 수도… 재제청 갈등, 서로 존중하면 해소”",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688657?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "양천 ‘2호선 신정지선 연장’ 촉구",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003688679?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "세계": [
+        {
+          "title": "李대통령 “굴종·사대 지양”… 국익 외교 재확인",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166348?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "野 “루비오, 韓 정보라인 신뢰 손상 지적” 주장에… 강경화 “美, 정보협력 문제 설명… 구체 인사 언급 안해” [한·미관계 이상기류]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166356?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "野 “왜 北도발 문구 못 쓰나” 與 “표결하자”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166371?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "與野 ‘김승원 공방’ 30여분 만에 식약처 국감 파행 [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166366?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "與 “일방독주” 野 “중앙정치판 기웃”… 추미애 호된 신고식 [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166367?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李 대통령·김민석 자제령 무색…범여권 ‘김지용 인선’ 내홍 격화",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166365?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "與 “능력부족 공수처장 사퇴를” 野 “김현지·강훈식 수사해야” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166368?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령 “북극항로는 위기 때 기댈 생명 길 될 것”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166374?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "특검, 尹 선거법 항소심 ‘당선무효형’ 구형",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166377?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "김영훈 노동장관 “정년연장 연내 처리돼야”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166375?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "“원전 늦장심사로 2조원 기회비용 날려” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166384?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "“KTX·SRT 통합 졸속 추진” vs “통합 후 이용객 12% 늘어” [2026 국정감사]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004166387?date=20261014",
+          "showUrl": false
+        }
+      ],
+      "한국": [
+        {
+          "title": "이 대통령, 한미 관계 두고 \"굴종·사대적 태도 지양해야\"... 정동영·이종석 경질론 일축",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959248?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "지지율 떨어지는 소리에 '충격' 받은 민주당... '네 탓' 공방에 분열 악순환",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959299?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령, 특별감찰관 임명 함흥차사... 청문보고서 재송부 요청도 강행도 없어",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959282?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 \"중수청장·공소청장 국무회의 참석은 당연한 일\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959128?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "민주당, 자체 조사서 '신천지 집단 가입 정황' 확인... 공개 여부 고심",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959259?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "추미애 \"관사는 전세, 사치 아냐... 이 대통령 비판은 저라고 생각 안 해\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959138?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "헌재 사무처장, 국회 '대법관 제청 간섭' 논란에 \"위헌이라 평가 못 해\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959162?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "\"이재용·최태원 팔 비틀었나\" \"호남도 먹고 살아야\"… 반도체 클러스터 여야 공방",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959143?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "'모래알 야당'도 뭉쳤다… 인도 모디 정권, 선거 명부 논란에 흔들",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959155?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "산업부에 반도체 전담 '국' 생긴다… 메가프로젝트·특별법 이행 총괄",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959171?date=20261014",
+          "showUrl": false
+        },
+        {
+          "title": "\"에스토니아 모르는 사람 많아\"… 음악으로 조국 알리는 파보 예르비",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000959289?date=20261014",
+          "showUrl": false
+        }
+      ]
+    }
   }
 }
