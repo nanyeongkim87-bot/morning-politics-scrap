@@ -46080,5 +46080,448 @@
         }
       ]
     }
+  },
+  "20261102": {
+    "date": "20261102",
+    "sections": {
+      "조선": [
+        {
+          "title": "李, 오늘 ’821조 예산' 시정연설… 野 “30조 삭감할 것”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007221?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "오세훈·장동혁·한동훈 내일 국회서 각자 행사… 野 의원들 “어딜 가야하나”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007219?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "슬슬 몸푸는 정청래 “김민석 체제, 100일 되면 판가름”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007217?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "張, 연임 질문에 “피할 생각 없어”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007218?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "민주콩고, 6개월 만에 에볼라 사망자 5000명 넘어",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007206?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "美, 5200만명 사전투표 역대 최대… 민주당원 비율이 11%p 더 높아",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007207?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "중도 총리·우파 대통령, 헌재 장악 치킨게임… 폴란드 정부 마비 위기",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004007205?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "중앙": [
+        {
+          "title": "이 대통령 “돼지 눈엔 돼지만” 국힘 “본인은 호갱외교 막말”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003562063?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "여당 “5일 조희대 국조 요구서 보고” 야당 “예산 104조 삭감”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003562065?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[리셋 코리아] 노르웨이 진보 정부처럼 재정준칙 지켜야",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003562048?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 예산국회 본격 개막…선심성 예산 과감히 삭감해야",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003562067?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "동아": [
+        {
+          "title": "李, ‘잦은 순방’ 野 비판에 “돼지 눈엔 돼지만… 링거 맞으며 코피”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759294?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "정청래 “김민석 취임 100일뒤 제 역할 생각” 독자노선 시사",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759257?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[단독]‘쇼츠 국감’ 위해 ‘쇼츠 보좌진’ 대폭 늘린 의원실",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759254?date=20261102",
+          "showUrl": true
+        },
+        {
+          "title": "美 민주 완승땐 태양광-ESS산업 탄력… 공화 승리땐 마스가 속도 기대",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759271?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "영호남 손잡고 남해안 키운다… 특별법 2개 공동 추진",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759283?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "폴란드, 前정권 임명 헌재소장 직무정지… 총리-대통령 충돌",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759259?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "쿼드 외교장관, 中겨냥 “공급망 교란”… 희토류 등 수출 통제 맞서 협력 강화",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759260?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "최민정, 월드투어 두 대회 연속 金",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759268?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[천광암 칼럼]이 대통령의 말 사실인가, 친절한가, 필요한가",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759221?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[광화문에서/장관석]소방관 희생 앞에 남겨진 정치의 숙제",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003759218?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "경향": [
+        {
+          "title": "“돼지 눈엔 돼지만”…이 대통령 SNS, 소통 창구서 ‘설전 도구’로",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479986?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "서울 집값 90주째 상승에…대통령은 “시장 정상화, 인내의 시간”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479982?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "정쟁만 난무했던 국감 끝나고…2일부터 ‘821조 예산안’ 정국",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479981?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "조희대 국조·조작기소 특검법·신천지…김민석, 난제 풀 시간",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479983?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "루비오 “한국 의원들 비자 발급 지연, 20여년 전 행적 때문”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479980?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "폴란드 총리 “타협 없다” 강경…야권선 “총리가 쿠데타”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479961?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "“과거 시대정신이 민주화였듯…지금 필요한 건 사회통합과 화해”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479945?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "레오 14세, 교황 최초로 미 중간선거 투표",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479937?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[지금, 여기]대통령의 말, 인종 혐오",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479927?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[아침을 열며]이재명 대통령의 목숨줄",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479922?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]이 대통령의 과도한 SNS, 부정적 영향 우려하는 목소리 경청하길",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003479921?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "한겨레": [
+        {
+          "title": "국회, 821조 예산심사 정국 돌입…162조 미래기금 사용처 쟁점",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830151?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "호남 반도체 등 산업부 ‘예타 면제’ 사업에…“적정성 검토 없이 예산 짜”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830143?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "조희대 국조·조작기소특검법…11월 여야 대치 ‘뇌관’ 줄줄이",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830155?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "미래기금 여유 자금 두고…민주 ‘세수 결손 대비’ 국힘 ‘국채 발행 축소’",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830166?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “돼지 눈에는 돼지만”…국힘 “돼지 눈으로 국정”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830199?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "전작권 환수 늦추는 ‘미=천조국’ 해묵은 믿음…“함께 싸우는 동맹이 돼야”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830004?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "변전소 건설 추진 영남 지자체, 호남 반도체 변압기 전용 계획에 반발",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830130?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "무섭게 떠나는 ‘중도·수도권·청년’…이 대통령 안 바뀌면 정권 위태롭다",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830106?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]납득 안 되는 ‘선관위 병력 투입’ 지휘관 무죄 판결",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002830175?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "국민": [
+        {
+          "title": "대통령發 ‘외국인 노동자 경제 기여’ 논쟁… 한은 “큰 도움”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882216?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "吳의 보수 대통합론에 張·韓 셈법 온도차",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882222?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[포토] 악수하는 여야 대표",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882247?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "‘김민석 100일’ 민주당 전운… 정청래 “어떤 깃발 들지 고민”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882253?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "“돼지 눈엔·PC주의·내로남불”… 거칠어지는 李 SNS",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882289?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "국힘 “특검도 무혐의… 진실규명 아닌 여론 만들겠다는 고백”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882230?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "曺 계엄행적·李 파기환송 초점맞춘 與… 당내서도 우려",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882288?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[포토] 선거명부 부정 의혹 제기하는 인도 시위대",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882252?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 피의자는 영장신청서 못 보고 검사 면담… 방어권 보장도 ‘구멍’",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882229?date=20261102",
+          "showUrl": true
+        },
+        {
+          "title": "“영호남 연대는 ‘수도권 일극’ 극복할 지방시대 새 전략”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882213?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[국민논단] 미 중간선거는 AI를 ‘규제 산업’으로 바꿨다",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882267?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[글로벌 포커스] 미 중간선거와 한·미동맹",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001882265?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "서울": [
+        {
+          "title": "조희대·조작기소…민주·민생 삼킨다",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694612?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "민주 ‘신천지’ 이번주 의총 보고… 정청래는 ‘김민석 취임 100일’ 겨냥",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694617?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "李 “불공정을 ‘소수자 보호’로 방치”… 닷새째 ‘다문화 참전’",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694619?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "李 “돼지 눈에는 돼지만 보여” 野 “비판하는 국민이 돼지냐”",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694618?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "‘보수 3파전’ 신호탄… 장동혁 독주, 오세훈 “한동훈 배제 안 해”",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694620?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "한미일 외교장관, 북극·태평양 협력각서 서명",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694624?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "증거 못 다루는 검사, 기록 못 보는 변호사… 피해자는 운다",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694626?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "미 사전투표 열기… ‘블루 웨이브’ 꿈꾸는 민주당은 ‘자중지란’",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694633?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "국립치의학연구원 후보지 놓고 대구·충남 ‘파열음’",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694640?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[박상훈의 호모 폴리티쿠스] 팬덤 정치의 숨겨진 상처들",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694609?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[씨줄날줄] 대통령의 해외 순방",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694683?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "이재용, AI 반도체 승부처 ‘패키징’ 챙긴다… 日소부장 협력 확대",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003694669?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "세계": [
+        {
+          "title": "靑 “북·미대화 가능성 없지 않아”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171496?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "821조 예산정국 막 올라… 여야 ‘162조 미래기금’ 격돌 예고",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171497?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "李 “호남에서 콩이면 영남서도 콩이어야… 다문화지원 제도적 맹점 시정 차별 아냐”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171521?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "美, 진성준 늑장 비자 발급… 與野 ‘외교망신’ 공방",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171525?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "오세훈은 통합론, 한동훈은 중진과 협력… 보수 재편 기지개",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171504?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "與 ‘曺 계엄동조 의혹’ 정조준… 野 ‘탄핵 간보기 중단’ 촉구",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171503?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "‘신천지 보고’ 금주 의총… 민주 내홍 분수령",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171502?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "尹 ‘선거법’ 2심 4일 생중계… 내란 결심도 마무리",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171529?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "“韓, 제2의 조국”… 부산서 잠든 佛 6·25 영웅",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004171568?date=20261102",
+          "showUrl": false
+        }
+      ],
+      "한국": [
+        {
+          "title": "정청래가 '김민석 취임 100일' 벼르는 이유... '신천지 의총'이 분수령",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962975?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "여야 '821조' 예산 전쟁 돌입… 조희대 국조·조작기소 특검까지 '강대강'",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962920?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "'다문화 논란'에 꿈쩍 않는 이 대통령... \"무조건 비호하면 왜곡 낳을 수 있어\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962951?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "탄식하는 '형소법 교과서' 저자... \"밀어닥칠 혼란, 도대체 해석을 할 수가 없다\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962929?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "휴직 중 국회의원 보좌관 된 고교 교사… 대법 \"정치적 중립성 훼손\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962883?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "서울서 난 불 4건 중 1건은 겨울철에… 정부·지자체 화재 예방 총력",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962925?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "모즈타바, 미·이 선거 혼돈 속 \"공격받으면 즉각 무력 대응\" 지시",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962914?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "클래식 관습엔 도전, 전쟁엔 선 긋기… 쿠렌치스 \"정치인 아니다\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962846?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "[부고] 김성원(국민의힘 국회의원)씨 부친상 외",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962892?date=20261102",
+          "showUrl": false
+        },
+        {
+          "title": "부동산 정책과 '정치·경제의 악순환' [헌법학자의 눈으로 본 대한민국]",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000962981?date=20261102",
+          "showUrl": false
+        }
+      ]
+    }
   }
 }
