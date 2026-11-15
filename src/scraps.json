@@ -52016,5 +52016,408 @@
         }
       ]
     }
+  },
+  "20261116": {
+    "date": "20261116",
+    "sections": {
+      "조선": [
+        {
+          "title": "예산 논의는 뒷전… 내분 휩싸인 與野",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009797?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“전작권 전환, 한국서 정치적 선언처럼 돼… 워싱턴이 걱정하는 건 군사적 동맹 약화”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009793?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령 오늘 순방길… 필리핀 아세안 회의 후 中 선전 APEC에 참석",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009792?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "국힘은 ‘징계 늪’ 갇혀… 韓제명 과정 추가 폭로 예고, 친한계 소송 판결도 임박",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009790?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "관계성 범죄 급증에 靑, 예정 없던 브리핑 “안전 프로젝트 추진”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009788?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“李가 尹탄핵 반대” “통일교, 김민석 밀어”… 내분 불붙인 최민희 입",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009789?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "시위 5주째 이어지자… 佛정부, 최저임금 한달 앞당겨 인상",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009777?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“평생 野黨 하다 흙돌서 차돌 됐지… 소인배는 정치하면 안됩니더”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009724?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[朝鮮칼럼] 李 대통령은 헌법과 국민을 먼저 존중하길",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009732?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[태평로] 정동영 장관의 결자해지를 기대한다",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009730?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] ‘모두의 창업’ 또 유출, 이런 정부가 AI 혼란 대응할 수 있나",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009734?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "테슬라 무인 로보택시를 자가용으로… 운전대 없는 ‘사이버캡’ 美서 개인에 판매",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009746?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘인터넷 대상’ 대통령상에 엘리스그룹",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004009751?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "중앙": [
+        {
+          "title": "AI 커닝에 기업채용도 비상…삼성·SK “응시자 안경 대면 검사”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565377?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "대통령 “등 뒤서 화살, 개혁 방해 용납 어렵다”…강경파 직격",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565298?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "친명 ‘최민희 축출’ 총공세…친청, 공개 반격 주저하는 까닭",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565378?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[사진] 최민희 “대통령께 누 끼쳐 사죄”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565300?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "162조 미래기금 없애자는 국힘…내부선 “우리 지역에 달라”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565374?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "한동훈 장인 진형구 전 고검장 별세",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565336?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[김형구의 시시각각] 민주당의 ‘서울 반 토막’ 걱정",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565360?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 신천지·반명·분열주의에 갇힌 민주당의 부끄러운 자화상",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565362?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“M&A 위축” vs “주주 보호”…의무공개매수제도 둘러싼 공방",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565349?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "동아": [
+        {
+          "title": "[단독]與TF ‘경찰 모든 수사기록 검사에 전달’ 검토…강경파 반발 변수",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762614?date=20261116",
+          "showUrl": true
+        },
+        {
+          "title": "靑 “사회적 약자 대상 범죄 강력대응… ‘가석방 없는 무기형’ 도입 등 논의”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762613?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "李 “가장 힘든 일은 등 뒤서 날아오는 화살” 친청계에 연일 경고",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762611?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "김민석, ‘최민희 감찰’ 3일만에 징계 절차… 조사 결과 보고받고 黨윤리심판원에 이첩",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762652?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "국힘, 부산서 ‘조작기소 특검법 규탄’ 장외집회",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762610?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“장동혁-오세훈-한동훈 마주 앉자” 국힘 韓복당 갈등 확산",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762653?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘비토’ 모자 책상에 두고… 밀러, 美민주당과 전면전 예고",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762622?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[횡설수설/신광영]“검사가 3억 물어내라”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003762566?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "경향": [
+        {
+          "title": "최민희 ‘징계’ 수순…민주당 ‘내홍’ 격화",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482829?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "친한계 ‘가처분 카드’ 만지작…국힘, 2차 ‘장·한 대전’ 발발 예고",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482819?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "국회, 820조 ‘슈퍼 예산’ 심사 돌입…‘162조’ 미래기금 사용처 진통 예상",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482816?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘이 대통령 영정’ 등 비방·혐오 선 넘는 ‘변형 현수막’ 집중 단속",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482806?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "정부, 데이터센터 지방 분산 위해 수도권 건설 기준 강화",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482786?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘한동훈 의원 장인’ 진형구 전 대전고검장 별세···생전 '조폐공사 파업 유도' 발언 파문",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482769?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "경향신문 ‘셸터-서로를 구하다’, 민주언론실천상 수상",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482768?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[정동칼럼]견디는 이들의 민주주의",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003482750?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "한겨레": [
+        {
+          "title": "국제민중법정 “미 정부, 한국 원폭 피해자들에게 배상하라”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832331?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령, 오늘 아세안·아펙 순방길…한-중, 한-미 정상회담 열릴까",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832306?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "김민석, ‘발언 논란’ 최민희 징계 속도…중징계 땐 친명-친청 전면전",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832335?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "폐지 법안 발의된 ‘제주 무사증 입국’…제주도 “관광·외교 핵심 제도” 반발",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832332?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“원폭 피해자에 대한 미국 정부의 사과·배상 꼭 필요해”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832297?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "달라 보여도 ‘같은 병’…민주·국힘, 강성 당원에 휘둘려 자기 파괴로",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832231?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "민주당 박희승 의원 나리, 권력에 취한 겐가 [아침햇발]",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832277?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 민생 뒷전인 채 내전 치닫는 민주당",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832320?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "국민": [
+        {
+          "title": "靑 “국가시험 부정 의심사례 전수조사”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885230?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "당권파가 제압 나서자 친청계 결사항전… 두 쪽 나는 민주당",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885213?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "李 “가장 힘든건 등 뒤서 날아오는 화살”… 강경파 겨냥?",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885214?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘깃발’ 놓고 고민하는 정청래… 신천지로 반전 노리지만 역부족",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885249?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "李 대통령, 美·中과 북핵 조율… 안보·통상 협력 타진도",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885217?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 특검, 선관위 과장 피의자 조사… 선거물품 특혜 의혹 수사 확대",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885251?date=20261116",
+          "showUrl": true
+        }
+      ],
+      "서울": [
+        {
+          "title": "“최민희 제명” 요구에 “김민석 책임” 맞불… 계파 갈등 ‘치킨게임’",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699530?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령 “가장 힘든 일은 등 뒤서 날아오는 화살”… 친명계 결집 메시지?",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699531?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "美민주당, 알래스카 주지사도 탈환… 韓 LNG 투자 변수 되나",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699544?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "호남 ‘반도체 심장부’ 도약… 일자리·협력기업 뿌리내린다[서남권 반도체 클러스터 점검]",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699565?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "반도체가 바꾼 호남 진학지도… 교육현장까지 열기 후끈",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699564?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "기댈 곳 줄어드는 김민석, 설 자리 좁아지는 장동혁[윤태곤의 판]",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699518?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 계파 갈등 수렁 빠진 與, 민생 다급하면 이럴 수 있겠나",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699592?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "체코 원전 시공사 교체 논란… ‘결렬 과정’ 청문회로 번지나",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003699582?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "세계": [
+        {
+          "title": "초소형 이어폰·카메라 수법 기상천외… “육안 검사로는 한계” [AI에 뚫린 국가자격시험]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175259?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령 16일 순방길… 한반도 평화 지지 확보 목표",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175299?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "“백인 아닌 대만계라” “美 민주당의 희생양” 젠슨 황 감싸는 중화권 매체들 [젠슨 황 퇴진 파장]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175289?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘최민희 감찰發’ 與 계파 정면충돌… 김민석 대표 취임 100일이 ‘사태 분수령’",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175261?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "조작징계·韓 복당 ‘내홍’… 국힘 중진들, 지도부에 ‘통합’ 압박",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175276?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "‘친정’ 겨누는 조작기소 특검 폭풍전야",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175283?date=20261116",
+          "showUrl": false
+        }
+      ],
+      "한국": [
+        {
+          "title": "[단독] 13조 증세라더니 중앙정부 쓸 세수는 '마이너스'… 재정안정성 위협 [2027 나라 살림 대해부]",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965704?date=20261116",
+          "showUrl": true
+        },
+        {
+          "title": "靑 \"수능 전체 수험생 대상 AI 기기 점검... 열감지 카메라 등 총동원\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965661?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "美, 中과 정상회담서 '엔비디아 간첩 의혹' 제기 않기로… 내부선 책임 공방",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965663?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "與친청계 '개혁파' 발언 뒤… 이 대통령 \"개혁의 이름 빌려 개혁 방해\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965657?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[속보] 최민희 징계 수순... \"김민석, 감찰 결과 보고 받고 윤리심판원 이첩 지시\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965672?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "추가 폭로 예고 속 한동훈 '조작징계' 공방 2라운드... 확전 가능성은",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965697?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "수사받을 처지 된 전·현직 '특수통' 검사들… 李 수사했던 이들 대거 특검선상에",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965669?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "정부, 전월세 매물 늘었다지만… 수도권 전세수급 여전히 '공급 부족'",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965628?date=20261116",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 신임 청와대 국민안전비서관에 김성재 경찰청 대변인 내정",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965673?date=20261116",
+          "showUrl": true
+        },
+        {
+          "title": "'한동훈 장인' 진형구 前 대전고검장 별세… 향년 81세",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965640?date=20261116",
+          "showUrl": false
+        }
+      ]
+    }
   }
 }
