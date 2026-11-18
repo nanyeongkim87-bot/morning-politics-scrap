@@ -52877,5 +52877,478 @@
         }
       ]
     }
+  },
+  "20261118": {
+    "date": "20261118",
+    "sections": {
+      "조선": [
+        {
+          "title": "한성숙 총리가 ‘의사봉’ 조작기소 특검법 의결",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010232?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "AI 커닝 시대… 정부는 “옷 단추마다 스티커” 아날로그 대책",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010228?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "대통령 자리 비우자… 김지용 중수청장 국무회의 불참",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010222?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "총리가 총대, 장관들은 전원 찬성… 법조계 “법치주의 대원칙 위배”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010226?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "野 “탈옥 특검 취소하라”… 靑서 정부청사까지 행진",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010224?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "‘최민희 징계’ 놓고… 지도부 이어 與 초선들도 둘로 쪼개졌다",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010217?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "“배현진 1년” “네”… 野 윤리위원, ‘하명 징계’ 문자 공개",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010216?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "정부, 한전KPS 사장 내정자 교체하려다 패소",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010215?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "노만석 “尹 구속취소, 당시 검찰의 다수 의견”",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010213?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[기자의 시각] 장관 앞에서도 꺾이지 않은 원칙",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010163?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 위헌 소지 특검법에 국무위원 침묵, 계엄 때와 뭐가 다른가",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010168?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 호남 반도체 공장 ‘南전北닉’으로 결정",
+          "url": "https://n.news.naver.com/article/newspaper/023/0004010237?date=20261118",
+          "showUrl": true
+        }
+      ],
+      "중앙": [
+        {
+          "title": "[사진] 교육장관 아닌 총리가 ‘수능 대국민 담화’",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565984?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사진] “장관님, 차관 배석으로 결정됐습니다”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565975?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "국힘 “한성숙, 이재명 탈옥죄 공범…정부 아닌 깡패집단”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565966?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "인원 309명·예산 380억…李정부 7번째 특검, 역대최대 규모",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003566017?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "여당 초선 55명 “최민희 중징계” 혁신당·김어준 “이럴 문제인가”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565926?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사진] 김민석·정청래 웃고 있지만…",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565965?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 총리의 조작기소 특검법 대리 의결, 책임은 대통령 몫이다",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565992?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "“송전망·교통 인프라 건설, 부처 간 칸막이 허물어야”",
+          "url": "https://n.news.naver.com/article/newspaper/025/0003565960?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "동아": [
+        {
+          "title": "‘조작기소 특검법’ 국무회의 통과, 최장 200일 수사",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763244?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "수능 매 교시마다 안경 전수 검사… “AI 커닝에 아날로그 대응”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763240?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "‘與 1호 리스크’ 된 수석최고위원 최민희… 설화에 사과만 6차례",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763250?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "與김문수 “수능 수험생 상호 감시” 논란일자 철회",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763252?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "“배현진 1년” “네” 문자 공개… 장동혁 조작징계 증거는 제시 안해",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763251?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "조국, 日입국 거부당해… 독도 방문 영향 가능성",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763235?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "서울대 총장 후보 선출됐지만 ‘잡음’… 교수노조 “제도 개편 필요”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763261?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "“대통령의 ‘처음 듣는 얘기’ 1년… 北 억류 선교사 생사조차 몰라”",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763284?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "블랙핑크 제니, 그래미 ‘올해의 레코드’ 후보에",
+          "url": "https://n.news.naver.com/article/newspaper/020/0003763268?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "경향": [
+        {
+          "title": "정부 ‘조작기소특검법’ 공포안 의결…이 대통령, 아시아 순방 중 재가할 듯",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483326?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "1교시 시작 전 30분간 단추·안경 검사…시간 부족 등 혼란 우려",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483321?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “부정행위 엄단…신고 땐 1억원 포상금 검토”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483334?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “김대중·주룽지·오부치, 선구적 협력 교범”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483316?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "민주 초선 55명 “최민희 최고위원 사퇴 스스로 결단하라”",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483310?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "‘장동혁, 윤리위 개입’ 추가 폭로…‘장·한 갈등’ 증폭",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483309?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설]연말 민생국회 와중에 내분으로 날 새는 무책임한 여당",
+          "url": "https://n.news.naver.com/article/newspaper/032/0003483254?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "한겨레": [
+        {
+          "title": "첨단 달리는 AI 부정행위, 정부 대책은 ‘단추마다 스티커’",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832692?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "‘조작기소 특검법’ 국무회의 통과…국힘 반발, 정국 경색 예고",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832689?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "수능 시험장 입실 뒤 30분간 안경·소매 일일이 검사…혼란 불가피",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832694?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “요행 노리다가 인생 망치지 말고 수능 부정행위 포기하라”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832702?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "‘친한계’ 배현진 징계에 국힘 외부 인사 개입…장동혁 ‘하명 징계’ 의혹",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832679?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "전현직 검사 겨눈 특검법 통과…인력난·재판기록·이해충돌 논란 ‘가시밭길’ 예고",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832644?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "민주 초선 55명 ‘최민희 엄중 징계’ 요구…“스스로 거취 판단하라”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832659?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "이 대통령 “경제협력·안보관계 도움”…다카이치 “관계 중요성 커져”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832669?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "민주당, 관계성 범죄 대응 ‘친밀관계 종합법’ 추진",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832687?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "‘첨단 AI 해킹’ 막을 ‘차르’, 부처간 벽부터 넘어야 한다",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832712?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "국정원 ‘사이버 권한 확대’ 우려…“국가안보 영역 명확히 해야”",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832713?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "블랙핑크 제니, 그래미 ‘올해의 레코드’ 후보…2개 부문 지명",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832503?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 강화된 ‘AI 커닝’ 대책 내놓은 정부, 철저히 시행하길",
+          "url": "https://n.news.naver.com/article/newspaper/028/0002832665?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "국민": [
+        {
+          "title": "조작기소 특검법 李 순방 기간 중에 총리 주재로 의결",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885745?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "청와대 앞 몰려간 국민의힘 “탈옥 하청 꼼수” 규탄",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885729?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "진짜 윤리위원장 따로 있었나… 張측 외부인사, 징계 첨삭 지휘 의혹",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885736?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "與 초선 55명 “최민희 엄중 징계”… 최고위원직 사퇴도 압박",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885733?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "한동훈 장인상 빈소서 韓·張 껄끄러운 조우",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885734?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "부대 회의실이 헬스장… 파라과이 전 대통령 ‘황제 구금’",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885735?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "“자립지원, 지역·부처별로 천차만별… 칸막이 없애고 국가가 책임져야”",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885725?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[단독] 수사권 없으면서… 경찰, 계엄가담 의혹 군인 사건 두달 방치",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885814?date=20261118",
+          "showUrl": true
+        },
+        {
+          "title": "‘AI 커닝’ 정보 온라인에 넘치는데… 이제야 막겠다는 정부­",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885782?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 수능 부정행위 방지에 정부 역량 총동원해야",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885805?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 민생 현안 관계없이 논란만 야기할 조작기소 특검법",
+          "url": "https://n.news.naver.com/article/newspaper/005/0001885806?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "서울": [
+        {
+          "title": "조작기소 특검법, 李순방 중에 의결",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700468?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "조국, 日공항서 입국 거부… 독도 방문·전과 이력 때문?",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700474?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "與 초선 55명 “최민희 거취 결단” 성명",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700475?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "교통 일꾼들의 헌신, 선진 교통 문화 꽃피우다 [제19회 교통문화발전대회]",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700489?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "수상자 명단 [제19회 교통문화발전대회]",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700491?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "국무총리 표창 [제19회 교통문화발전대회]",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700492?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "블랙핑크 제니, 첫 그래미 2관왕 노린다… 아이브·키키도 아시안 팝 후보로",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700494?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[이순녀 칼럼] ‘국면 전환용’ 의심만 키운 趙 의장의 개헌론",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700541?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 총리가 의결한 조작기소 특검법, 대통령 책임은 그대로",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700544?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 정부 뒷북 대책… 수능 부정행위 발본색원 믿을 수 있겠나",
+          "url": "https://n.news.naver.com/article/newspaper/081/0003700545?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "세계": [
+        {
+          "title": "정부, 수능 AI 커닝 대책… 돌고 돌아 ‘감독 강화’",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175938?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "李대통령 공소취소 우려 속… 조작기소 특검법 의결",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175937?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "1교시 시작前 안경 전수검사… 가방은 복도에 모두 별도 보관 [수능 ‘AI 커닝’ 비상]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175943?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "특별법 제정 나선 여야… “5년 이하 징역 추진” [수능 ‘AI 커닝’ 비상]",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004176053?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "이용철, 靑 민정수석실 재직 당시… 경실련 인사 기업 비상장주식 취득",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175933?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "최민희 징계 이르면 금주 윤곽… 與 초선 55명, 사퇴 압박",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175931?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "與 “수사권 남용 진실 밝힐 출발점”…野 “국민 심판대서 정권 몰락”",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175932?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "논란 의식했나… 김지용 중수청장, 국무회의 첫 불참",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004175935?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[데스크의 눈] 정치가 민심을 외면하면",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004176002?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] 총리가 총대 멘 ‘조작 기소’ 특검법, 헌정사 오점 남을 것",
+          "url": "https://n.news.naver.com/article/newspaper/022/0004176006?date=20261118",
+          "showUrl": false
+        }
+      ],
+      "한국": [
+        {
+          "title": "이 대통령 순방 중 '조작기소 특검법' 국무회의 의결… 정국 경색 불가피",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966092?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "김민석 \"수능 AI 부정행위 적발 땐 '10년 응시 제한' 입법 추진\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000965987?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "러 \"푸틴, 중국에서 이재명 대통령과 만날 것\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966104?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "'중대 논란 겹겹' 조작기소 특검 결국 출범… 최대 309명 꾸린다",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966127?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "\"최민희 결단하라\" 與 초선 10명 중 8명 뭉쳤다… 친청계는 불참",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966197?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "\"배현진 1년\" \"한떨거지들\"… 국힘 윤리위원 '징계 조작 의혹' 문자 공개",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966179?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "조국 전 대표, 日서 입국 거부당해… '과거 독도 방문' 문제 됐나",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966047?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "교부세 재원을 미래대응기금으로?... 국회 \"지자체 자율성 저하 우려\"",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966098?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "3일장, 일제강점기 유산일 뿐 지켜야 할 전통도 아니다 [長靑年, 늘 푸른 마음]",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966175?date=20261118",
+          "showUrl": false
+        },
+        {
+          "title": "[사설] ‘조작 징계’ 개입 의혹 장동혁, 무시로 어물쩍 넘겨선 안 돼",
+          "url": "https://n.news.naver.com/article/newspaper/469/0000966167?date=20261118",
+          "showUrl": false
+        }
+      ]
+    }
   }
 }
